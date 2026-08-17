@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>LISTA DE ESTUDIANTES</h1>
+
+    <input 
+        type="text" 
+        id="nombre" 
+        placeholder="Escriba un nombre"    
+    >
+
+    <button id="Agregar">
+        Agregar
+    </button>
+
+    <ul id="lista"></ul>
+
+    <script>
+        //seleccionar elementos
+        const input = document.querySelector("#nombre")
+        const boton = document.querySelector("#Agregar")
+        const lista = document.querySelector("#lista")
+
+        //escuchar elementos
+        boton.addEventListener("click", function (){
+            const nombre = input.value.trim();
+
+            //validar
+            if (nombre === "") {
+                return
+            }
+
+            //crear nuevo elemento
+            const elemento = document.createElement("li");
+
+            //agregar contenido
+            elemento.textContent = nombre;
+            //agregarlo al dom
+            lista.appendChild(elemento);
+
+            //limpiar input
+            input.value = "";
+        })
+    </script>
+</body>
+</html>
