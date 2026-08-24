@@ -6,6 +6,7 @@ const lista = document.querySelector("#listaTareas");
 const mensaje = document.querySelector("#Mensaje");
 const Contador = document.querySelector("Contador");
 
+
 Titulo.textContent = "To-Do List con JavaScript";
 
 Input.addEventListener("input", function(){

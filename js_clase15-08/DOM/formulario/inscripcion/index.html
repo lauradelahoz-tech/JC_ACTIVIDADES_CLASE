@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="contenedor">
+        <h1> Inscripción a curso </h1>
+
+        <form id="formulario">
+
+            <div class="campo"> 
+                <label for="nombre">
+                    Nombre Completo
+                </label>
+
+                <input type="text"  id="nombre" placeholder="Ej: Laura de la hoz">
+            </div>
+
+            <div class="campo">
+                <label for="correo">
+                    Correo electronico
+                </label> 
+
+                <input type="email" id="correo" placeholder="correo@ejemplo.com">
+            </div>
+
+            <div class="campo"> 
+                <label for="curso">
+                    Selecciona un curso
+                </label>
+
+                <select id="curso">
+                    <option value=""> Selecciona una opción
+                    </option>
+
+                    <option value=""> 
+                        JavaScript  
+                    </option>
+
+                    <option value="">
+                        html y css
+                    </option>
+
+                    <option value="">
+                        Python
+                    </option>
+                    
+                </select>
+            </div>
+            <button type="submit">
+                Inscribirme
+            </button>
+        </form>
+
+        <p id="mensaje"> </p>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
