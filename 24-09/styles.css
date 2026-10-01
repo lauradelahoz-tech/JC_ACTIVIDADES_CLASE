@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7f2;
+    color: #18321f;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 8%;
+    background: white;
+    border-bottom: 1px solid #dfe8dc;
+}
+
+.header div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    font-size: 32px;
+}
+
+.hero {
+    min-height: 350px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 8%;
+    background: #dff1d8;
+}
+
+.hero h2 {
+    font-size: 48px;
+    max-width: 600px;
+    margin: 15px 0;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+.hero-emoji {
+    font-size: 70px;
+}
+
+.tag {
+    display: inline-block;
+    background: #c4e8b7;
+    padding: 7px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.section {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 20px;
+}
+
+.section-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.section h2 {
+    margin-top: 10px;
+}
+
+form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input {
+    flex: 1;
+    padding: 14px;
+    border: 1px solid #ccd8c8;
+    border-radius: 10px;
+}
+
+button {
+    border: none;
+    padding: 14px 20px;
+    border-radius: 10px;
+    background: #2f7d32;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+#product-list {
+    list-style: none;
+}
+
+.product-card {
+    background: #f4f8f2;
+    padding: 18px;
+    margin-top: 10px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.product-card button {
+    background: #c84949;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 16px;
+}
+
+.api-card {
+    background: #f5f9f3;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+#status {
+    margin: 15px 0;
+    font-weight: bold;
+}

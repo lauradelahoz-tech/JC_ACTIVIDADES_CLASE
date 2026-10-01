@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercado Verde</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div>
+            <span class="logo">🥕</span>
+            <h1>Mercado Verde</h1>
+        </div>
+
+        <p>Del campo a tu mesa 🌱</p>
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <div>
+                <span class="tag">Productos frescos</span>
+
+                <h2>
+                    Verduras frescas.
+                    Sin complicaciones.
+                </h2>
+
+                <p>
+                    Compra directamente a productores locales.
+                </p>
+            </div>
+
+            <div class="hero-emoji">
+                🥬🥕🍅
+            </div>
+        </section>
+
+        <section class="section">
+
+            <div class="section-title">
+                <div>
+                    <span class="tag">Administrador</span>
+                    <h2>Agrega productos</h2>
+                </div>
+            </div>
+
+            <form id="product-form">
+
+                <input
+                    id="product-input"
+                    type="text"
+                    placeholder="Ej: Tomate"
+                >
+
+                <input
+                    id="price-input"
+                    type="number"
+                    placeholder="Precio"
+                    min="1"
+                >
+
+                <button type="submit">
+                    Agregar producto
+                </button>
+
+            </form>
+
+            <p id="status"></p>
+
+            <ul id="product-list"></ul>
+
+        </section>
+
+        <section class="section">
+
+            <div class="section-title">
+
+                <div>
+                    <span class="tag">Proveedor externo</span>
+                    <h2>Ofertas disponibles</h2>
+                </div>
+
+                <button id="load-products">
+                    Buscar ofertas 🔎
+                </button>
+
+            </div>
+
+            <div id="api-products" class="products-grid"></div>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
